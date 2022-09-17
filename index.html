@@ -71,7 +71,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>LATHA S S</h1>
-      <p>I'm <span class="typed" data-typed-items="Software Quality Assurance Engineer"></span></p>
+      <p>I'm <span class="typed" data-typed-items="Test Automation Engineer"></span></p>
       <p>I support to monitor every phase of the <br> development process to ensure that the <br> design and software
         adhere to company <br> standards</p>
     </div>
@@ -85,8 +85,8 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p>I'm highly qualified, <a href="https://atsqa.org/certified-testers/profile/7b9a4a6fb711494ab0110a650e5cb65b">ISTQB</a> certified, software quality assurance engineer over 3 years of experience in software development life cycle, test cases management, defect life cycle management and automation scripting.</p>
-          <p> I have a serious passion for Software Quality Assurance. I am Well-organised person, problem solver, independent employee with high attention to detail.
+          <p>I'm highly qualified, <a href="https://atsqa.org/certified-testers/profile/7b9a4a6fb711494ab0110a650e5cb65b">ISTQB</a> certified, Test Automation Engineer over 3 years of experience in software development life cycle, test cases management, defect life cycle management and automation scripting.</p>
+          <p> I have a serious passion for software quality and automating the process to maintain the quality of product. I am Well-organised person, problem solver, independent employee with high attention to detail.
           </p>
         </div>
 
@@ -95,7 +95,7 @@
             <img src="static/img/profile_photo.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Software Quality Assurance Engineer.</h3>
+            <h3>Test Automation Engineer.</h3>
             <p class="fst-italic">
 
             </p>
@@ -279,7 +279,7 @@
             <h3 class="resume-title">Summary</h3>
             <div class="resume-item pb-0">
               <h4>Latha S S</h4>
-              <p><em>Innovative and self-motivated software quality assurance engineer with 3+ years of experience in software testing worked for project Robotic Process Automation.</em></p>
+              <p><em>Innovative and self-motivated Test Automation Engineer with 3+ years of experience in software testing worked for project Robotic Process Automation.</em></p>
               <ul>
                 <li>Brussels, Belgium</li>
                 <li>(+32) 46-760-6413</li>
@@ -326,7 +326,7 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Software Quality Assurance Engineer</h4>
+              <h4>Test Automation Engineer</h4>
               <h5>2016 - 2022</h5>
               <p><em>Flex, Pune Maharashtra India </em></p>
               <ul>
@@ -412,8 +412,11 @@
            <!-- Page Header -->
           <div class="col-lg-5 d-flex align-items-stretch">
             <div class="page-heading">
+                {% if msg_sent: %}
+                <h1>Successfully sent your message</h1>
+                {% else: %}
                 <h1>Contact Me</h1>
-
+                {% endif %}
 
             <form name="sentMessage" id="contactForm" action="{{ url_for('contact') }}" method="post" novalidate>
               <div class="row">
